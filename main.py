@@ -5,14 +5,14 @@ from random import randint
 def show_winner():
     number = randint(0, 99)
     winner.setText(str(number))
-    text.setText('Победитель')
+    text.setText('Победитель') #Winner
 
 app = QApplication([])
 main_win = QWidget()
-main_win.setWindowTitle('Рандомайзер')
-button = QPushButton('Сгенирировать')
-winner = QLabel('Повторить:')
-text = QLabel('Нажми, чтобы узнать победителя')
+main_win.setWindowTitle('Рандомайзер') #Randomizer
+button = QPushButton('Сгенирировать') #Generate
+winner = QLabel('Повторить:') #Repeat
+text = QLabel('Нажми, чтобы узнать победителя') #Click to find out the winner
 winner.setText('?')
 line = QVBoxLayout()
 line.addWidget(text, alignment = Qt.AlignCenter)
